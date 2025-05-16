@@ -2,8 +2,6 @@ import React from "react";
 import { Card, CardBody, CardHeader } from "@heroui/card";
 import { User } from "@heroui/user";
 import { Divider } from "@heroui/divider";
-import { Button } from "@heroui/react";
-import Link from "next/link";
 import NavigationButton from "../components/NavigationButton";
 
 interface User {
@@ -27,7 +25,7 @@ const UsersPage = async () => {
         <h1 className="font-bold text-4xl">USERS</h1>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4 mt-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 mt-8">
         {users.map((user) => (
           <Card key={user.id}>
             <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
